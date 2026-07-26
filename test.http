@@ -1,0 +1,44 @@
+###################################################
+### Zone 1 - IoT Lab (SAFE)
+###################################################
+
+POST http://localhost:5000/api/zones
+Content-Type: application/json
+
+{
+  "zone_name": "IoT Lab",
+  "fire": 0,
+  "gas": 250,
+  "water": 10,
+  "occupancy": 1
+}
+
+###################################################
+### Zone 2 - Robotics Lab (WARNING)
+###################################################
+
+POST http://localhost:5000/api/zones
+Content-Type: application/json
+
+{
+  "zone_name": "Robotics Lab",
+  "fire": 0,
+  "gas": 1800,
+  "water": 20,
+  "occupancy": 1
+}
+
+###################################################
+### Zone 3 - Server Room (CRITICAL)
+###################################################
+
+POST http://localhost:5000/api/zones
+Content-Type: application/json
+
+{
+  "zone_name": "Server Room",
+  "fire": 1,
+  "gas": 120,
+  "water": 350,
+  "occupancy": 0
+}
